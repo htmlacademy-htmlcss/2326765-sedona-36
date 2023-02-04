@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Анастасия](https://up.htmlacademy.ru/htmlcss/36/user/2326765).
-* Наставник: `Неизвестно`.
+* Студент: [Анастасия Колмагорова](https://up.htmlacademy.ru/htmlcss/36/user/2326765).
+* Наставник: `Арсений Березин`(https://htmlacademy.ru/profile/id263537).
 
 ---
 
