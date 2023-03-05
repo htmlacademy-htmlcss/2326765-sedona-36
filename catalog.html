@@ -57,38 +57,94 @@
             <a>Гостиницы</a>
           </li>
         </ol>
-        <h3 class="visually-hidden">Инфраструктура</h3>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <p>Инфраструктура</p>
-            <input type="checkbox" checked name="pool" id="pool-field">
-            <label for="pool-field">Бассейн</label>
-            <input type="checkbox" checked name="parking" id="parking-field">
-            <label for="parking-field">Парковка</label>
-            <input type="checkbox" name="wifi" id="wifi-field">
-            <label for="wifi-field">Wi-Fi</label>
+
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-group-title">Инфраструктура</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" checked name="pool" id="pool-field">Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" checked name="parking" id="parking-field">Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="wifi" id="wifi-field">Wi-Fi
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-group-title">Тип Жилья</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" checked name="type-hotel" value="Гостиница">Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="type-motel" value="Мотель">Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="type-appartment" value="Апартаменты">Апартаменты
+                  </label>
+                </li>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-group-title">Стоимость, ₽:</legend>
+              <input type="text" name="min-price" placeholder="от" value="0">
+              <input type="text" name="max-price" placeholder="до" value="9000">
+              <input type="range" name="cost-range-slider" class="cost-range" min="0" max="9000">
+          </fieldset>
+
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="reset">Сбросить</button>
         </form>
-        <h3 class="visually-hidden">Тип Жилья</h3>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <p>Тип Жилья</p>
-          <label>
-            <input type="radio" checked name="type-hotel" value="Гостиница">Гостиница
-          </label>
-          <label>
-            <input type="radio" name="type-motel" value="Мотель">Мотель
-          </label>
-          <label>
-            <input type="radio" name="type-appartment" value="Апартаменты">Апартаменты
-          </label>
-        </form>
-        <h3 class="visually-hidden">Стоимость</h3>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <p>Стоимость, ₽:</p>
-            <input type="text" name="min-price" placeholder="от" value="0">
-            <input type="text" name="max-price" placeholder="до" value="9000">
-            <input type="range" name="cost-range-slider" class="cost-range" min="0" max="9000">
-        </form>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
+
+      </section>
+
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Каталог гостиниц в Седоне с фильтрами</h2>
+        <p>Найдено гостиниц: 38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+        </select>
+
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать с описанием</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+
+        <div class="product-card">
+          <ul class="product-list">
+            <li class="product-card">
+              <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="" alt="Amara Resort & Spa">
+              <h3 class="product-card-title">Amara Resort & Spa</h3>
+              </a>
+              <p>Гостиница</p>
+              <p>От 4000 ₽</p>
+              <a class="product-card-button button" href="#">Подробнее</a>
+              <button type="button">В избранное</button>
+
+            </li>
+        </div>
+
       </section>
 
       <section class="subscribe">
