@@ -23,11 +23,13 @@
          </ul>
          <ul class="navigation-list navigation-user">
            <li class="navigation-item">
-             <a class="navigation-link" href="#"></a>
-               <span class="visually-hidden">Поиск</span>
+            <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+              <span class="visually-hidden">Поиск</span>
+                <input type="text" name="search">
+             </form>
            </li>
             <li class="navigation-item">
-             <a class="navigation-link"  href="#"></a>
+             <a class="navigation-link"  href="favourites.html"></a>
                <span class="visually-hidden">Избранное</span>
            </li>
            <li class="navigation-item">
@@ -35,14 +37,86 @@
            </li>
          </ul>
        </nav>
-     </header>
+    </header>
 
-     <main>
+    <main>
+      <h1 class="visually-hidden">Поиск гостинниц в Седоне</h1>
       <section class="filter">
-
+        <h2 class="visually-hidden">Гостиницы  Седоны</h2>
+        <img src="images/photo/index-background.jpg" width="1200" height="467" alt="Гранд Каньон">
+        <p>Гостиницы  Седоны</p>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="visually-hidden" href="index.html"></a>
+            <img class="breadcrumbs-main-page" src="" alt="На главную страницу">
+          </li>
+          <li class="breadcrumbs-item">
+            <img class="breadcrumbs-arrow" src="" alt="">
+          </li>
+          <li>
+            <a>Гостиницы</a>
+          </li>
+        </ol>
+        <h3 class="visually-hidden">Инфраструктура</h3>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>Инфраструктура</p>
+            <input type="checkbox" checked name="pool" id="pool-field">
+            <label for="pool-field">Бассейн</label>
+            <input type="checkbox" checked name="parking" id="parking-field">
+            <label for="parking-field">Парковка</label>
+            <input type="checkbox" name="wifi" id="wifi-field">
+            <label for="wifi-field">Wi-Fi</label>
+        </form>
+        <h3 class="visually-hidden">Тип Жилья</h3>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>Тип Жилья</p>
+          <label>
+            <input type="radio" checked name="type-hotel" value="Гостиница">Гостиница
+          </label>
+          <label>
+            <input type="radio" name="type-motel" value="Мотель">Мотель
+          </label>
+          <label>
+            <input type="radio" name="type-appartment" value="Апартаменты">Апартаменты
+          </label>
+        </form>
+        <h3 class="visually-hidden">Стоимость</h3>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>Стоимость, ₽:</p>
+            <input type="text" name="min-price" placeholder="от" value="0">
+            <input type="text" name="max-price" placeholder="до" value="9000">
+            <input type="range" name="cost-range-slider" class="cost-range" min="0" max="9000">
+        </form>
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="reset">Сбросить</button>
       </section>
 
-     </main>
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social-network">
+            <li class="social-network-item">
+              <a class="visually-hidden" href="https://vk.com/htmlacademy">Мы Вконтакте</a></li>
+              <img class="social-network-icon" src="" alt="Перейти Вк">
+            <li class="social-network-item">
+              <a class="visually-hidden" href="https://t.me/htmlacademy">Мы в Телеграм</a></li>
+              <img class="social-network-icon" src="" alt="Перейти в Телеграм">
+            <li class="social-network-item">
+              <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a></li>
+              <img class="social-network-icon" src="" alt="Перейти в Youtube">
+          </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Номер телефона</h2>
+          <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+      </section>
+      <section class="logo-footer">
+        <a class="visually-hidden" href="https://htmlacademy.ru/">Логотип htmlacademy</a>
+        <img src="" alt="Перейти на сайт Академии">
+      </section>
+    </footer>
 
   </body>
 </html>
